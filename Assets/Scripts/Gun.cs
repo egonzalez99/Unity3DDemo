@@ -21,7 +21,7 @@ public class GUn : MonoBehaviour
         if (Input.GetMouseButtonDown(0) )
         {
             GameObject go = Instantiate(bulletPrefab, gunBarrel.position, Quaternion.identity);
-            go.GetComponent<Rigidbody>().AddForce(gunBarrel.forward * 1000f);
+            go.GetComponent<Rigidbody>().AddForce(gunBarrel.forward * 10000.0f);
         }
     }
 }
